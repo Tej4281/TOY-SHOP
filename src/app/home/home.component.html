@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<div class="container">
+
+  <!-- home section starts  -->
+
+<section class="home" id="home">
+
+  <div class="content">
+      <h3 style="color: red;font-weight:600;"> गुरुकृपा  <span style="color: black;"> GIFT </span><br><span style="color: black;"> HUB</span></h3>
+  </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+    <!-- features section starts  -->
+    <h1 class="heading" style="text-align: center;font-weight:800;position:relative;margin-top:45px;"> OUR <span style="color: white;background-color:red;">FEATURES</span> </h1><br><br>
+     <div class="box-container" >
+       <div class="row row-cols-2 row-cols-md-3 g-4" >
+        <div class="col" *ngFor="let features of features" >
+          <div class="card bg-image hover-zoom" style="position: center;">
+            <img src="{{features.image}}"class="center" height="250px" width="200px">
+            <div class="card-body">
+              <h3 class="card-title">{{features.name}}</h3>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+<!-- features section ends  -->
+
+<!-- advertise section start -->
+<h1 class="heading" style="text-align: center;font-weight:800;margin-top:10px;position:relative;"> SHOP BY <span style="color: white;background-color:red;">AGE</span> </h1><br><br>
+<div class="box-container" >
+  <div class="row row-cols-2 row-cols-md-3 g-4" >
+   <div class="col" *ngFor="let age of age" >
+     <div class="card bg-image hover-zoom" style="position: center;">
+       <img src="{{age.image}}"class="center" height="250px" width="200px">
+       <div class="card-body">
+         <h3 class="card-title">{{age.name}}</h3>
+       </div>
+     </div>
+   </div>
+   </div>
+</div>
+<br><br>
+<!-- advertise section end-->
+
+
+
+
+
+
+
+
+<!-- products section starts  -->
+
+<h1 class="heading" style="text-align: center;font-weight:800;margin-top:10px;position:relative;"> OUR <span style="color: white;background-color:red;">PRODUCTS</span> </h1><br><br>
+<div class="box-container" >
+  <div class="row row-cols-2 row-cols-md-3 g-4" >
+   <div class="col" *ngFor="let products of products" >
+     <div class="card bg-image hover-zoom" style="position: center;">
+       <img src="{{products.image}}"class="center" height="250px" width="200px">
+       <div class="card-body">
+         <h3 class="card-title">{{products.name}}</h3>
+       </div>
+     </div>
+   </div>
+   </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- products section end  -->
+
+
+<!-- Product Categories -->
+
+<h1 class="heading" style="text-align: center;font-weight:800;margin-top:10px;position:relative;"> PRODUCT <span style="color: white;background-color:red;">CATEGORIES</span> </h1><br><br>
+<div class="box-container" >
+  <div class="row row-cols-2 row-cols-md-3 g-4" >
+   <div class="col" *ngFor="let cat of cat" >
+     <div class="card bg-image hover-zoom" style="position: center;">
+       <img src="{{cat.image}}"class="center" height="250px" width="200px">
+       <div class="card-body">
+         <h4 class="card-title">{{cat.name}}</h4>
+       </div>
+     </div>
+   </div>
+   </div>
+</div>
+<br><br><br><br>
+<!-- Product Categories ends  -->
+
+<footer class="text-center text-white" style="background-color:rgb(255, 255, 255);">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Iframe -->
+    <section class="">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jymJETc3V8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section: Iframe -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div> -->
+  <!-- Copyright -->
+</footer>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+<body>
+
+
+  <div class="float-container">
+    <div class="float-child">
+        <h1 class="heading" style="text-align: center;font-weight:800;margin-top:50px;margin-left:34px;"> GET IN <span style="color: white;background-color:red;">TOUCH</span> </h1>
+
+        <div class="center col-8" style="margin-left: 18.5%;margin-top:20px;">
+    <form [formGroup]="registerform" >
+
+     <h5 style="font-family: 'Times New Roman', Times, serif;"> Your Name</h5>
+      <input type="text" name="uname" formControlName="uname" class="form-control" style="border: 0.2px solid black;">
+       <p  class="text-danger" *ngIf="registerform.controls.uname.invalid && registerform.controls.uname.touched">Please Enter Your Name</p>
+
+
+      <h5 style="font-family: 'Times New Roman', Times, serif;">Email</h5>
+      <input type="text" name="email" formControlName="email" class="form-control"  style="border: 0.2px solid black;" >
+      <p  class="text-danger" *ngIf="registerform.controls.email.invalid && registerform.controls.email.touched" >Please Enter Your Email</p>
+
+
+      <h5 style="font-family: 'Times New Roman', Times, serif;" >Phone Number</h5>
+      <input type="text" name="phone" formControlName="phone" class="form-control" style="border: 0.2px solid black;">
+      <p class="text-danger" *ngIf="registerform.controls['phone'].invalid && registerform.controls['phone'].touched"> please enter Your contact number</p>
+      <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['minlength']">please enter 10 digit Number</p>
+      <p class="text-danger" *ngIf="registerform.controls['phone'].errors?.['maxlength']"> please enter number below 10 digits.</p>
+
+    </form><br><br>
+
+    <button class="button-82-pushable" role="button">
+      <span class="button-82-shadow"></span>
+      <span class="button-82-edge"></span>
+      <span class="button-82-front text">
+        SUBMIT
+      </span>
+    </button>
+      </div>
+      </div>
+    </div>
+
+
+
+  <footer class="text-center" style="margin-top: -50px;">
+    <h1 class="heading" style="text-align: center;font-weight:800;margin-top:-20px;margin-left:34px;"> GOOGLE<span style="color: white;background-color:red;">LOCATION</span> </h1>
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Iframe -->
+      <section class="">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15087.71268919834!2d73.07948300781251!3d19.022886500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9861c9f0a79%3A0x906dd0df105e5522!2sGURUKRUPA%20NOVELTY%20AND%20GIFT%20GALLERY%20KAMOTHE!5e0!3m2!1sen!2sin!4v1664470279360!5m2!1sen!2sin" width="500" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="frame"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Iframe -->
+    </div>
+    <!-- Grid container -->
+
+  </footer>
+
+<br><br><br>
+</body>
+</html>

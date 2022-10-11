@@ -1,0 +1,124 @@
+.home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/assets/images/box-gift.gif) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  height: 490px;
+}
+
+.home .content{
+  text-align: center;
+  width:60rem;
+}
+
+.home .content h3{
+  color:var(--black);
+   font-size: 4rem;
+}
+
+.home .content h3 span{
+  color:var(--orange);
+}
+
+.home .content p{
+  /* color:var(--black); */
+  font-size: 2.7rem;
+  padding:1rem 0;
+  line-height: 1.8;
+}
+.nav-link{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:20px;
+  font-weight: 600;
+}
+
+.mini{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+.nav-item .nav-link:hover{
+  color: red;
+}
+.dropdown-menu:hover{
+background-color: rgb(202, 202, 202);
+/* border: 0.5px solid black; */
+}
+.dropdown-item{
+  font-weight:900;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  /* text-align: center; */
+}
+
+/* -----------------------------------box ends--------------------------------------- */
+
+.card{
+  /* border: 0.5px solid black; */
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.459);
+  /* padding-block: 40px 20px; */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* margin-top: 2px; */
+}
+.card-body .card-title{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.col {
+  width:370px;
+
+}
+.card{
+  width:300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+
+
+}
+.card .center{
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.card .center{
+  width: 200px;
+  height: 200px;
+}
+.card:hover {
+  color: red;
+  animation:  shake 0.8s  ;
+   }
+
+   @keyframes shake{
+     0%{
+       transform: translateX(0)
+     }
+     25%{
+       transform: translateX(25px);
+     }
+
+     50%{
+       transform: translateX(-25px);
+     }
+     100%{
+       transform: translateX(0px);
+     }
+   }
+.iframe{
+  box-shadow: 0px 10px 10px solid khaki;
+}
+/* ---------------------------------------------advertise------------------------------------------ */

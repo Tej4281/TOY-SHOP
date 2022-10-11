@@ -1,0 +1,74 @@
+.btn{
+  height: 45px;
+  box-shadow: 0px 5px 15px black;
+  padding-top: 2%;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  background-color:red;
+  border-style: outset;
+
+}
+
+/* ----------------------card start-------------------------------------------------- */
+
+.card{
+  /* border: 0.5px solid black; */
+  border: 0.2px solid black;
+  padding: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.856);
+  /* padding-block: 40px 20px; */
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 25px;
+}
+.card-body .card-title{
+  text-align:left;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+.col {
+  width:380px;
+  margin-top: 3px;
+}
+.card{
+  width:300px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 7px;
+
+
+}
+.card .center{
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.card .center{
+  width: 200px;
+  height: 200px;
+}
+.card:hover {
+  color: red;
+  animation:  shake 0.8s  ;
+   }
+
+   @keyframes shake{
+     0%{
+       transform: translateX(0)
+     }
+     25%{
+       transform: translateX(25px);
+     }
+
+     50%{
+       transform: translateX(-25px);
+     }
+     100%{
+       transform: translateX(0px);
+     }
+   }

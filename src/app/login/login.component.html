@@ -1,0 +1,57 @@
+
+<body>
+  <section class="vh-100" style="background-color: #ffffff;">
+    <div class="container py-1 h-80" >
+      <div class="row d-flex justify-content-center align-items-center h-80" >
+        <div class="col col-xl-10" >
+          <div class="card" style="border-radius: 1rem;" style="height:570px;">
+            <div class="row g-0">
+              <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="/assets/images/red ribbin.jpg"
+                  alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;height:572px;" />
+              </div>
+              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+
+
+
+                    <div class="d-flex align-items-center mb-3 pb-1">
+                      <img src="/assets/images/gift yellow2.png" height="100px" width="100px">
+                      <!-- <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i> -->
+                      <span class="h1 fw-bold mb-0"><p style="color: rgb(255, 7, 7);font-weight:800;font-size:55px;">गुरुकृपा </p><p style="color: black;font-weight:800;">GIFT HUB</p></span>
+                    </div>
+
+                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                    <form [formGroup]="loginForm">
+
+                           Email
+                          <input type="text" name="uname" id="" class="form-control" formControlName="uname">
+                          <p  class="text-danger" *ngIf="loginForm.controls.uname.invalid && loginForm.controls.uname.touched">Please Enter Your Email</p>
+
+                          password
+                           <input type="text"  name="pwd" id=""  class="form-control" formControlName="pwd">
+                           <p  class="text-danger" *ngIf="loginForm.controls.pwd.invalid && loginForm.controls.pwd.touched" >Please Enter Your Password</p>
+
+
+                      <div class="pt-1 mb-4">
+                          <button class="btn btn-dark btn-lg btn-block" type="button" (click)="login()">Login</button>
+                      </div>
+
+                    </form>
+
+                    <a class="small text-muted" href="#!">Forgot password?</a>
+                    <!-- <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account</p> -->
+                    <p class="mb-5 pb-lg-2" style="color: #393f81;margin-top:-50px;" routerLink="/register/">Register Here</p>
+
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="heading" style="text-align: center;font-weight:800;position:relative;margin-top:45px;"> 0-18 <span style="color: white;background-color:red;">MONTHS</span> </h1><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let data of data;let i=index">
+      <div *ngIf="i<24">
+          <div class="card bg-image hover-zoom" >
+            <img src="{{data.img}}" class="center" alt="...">
+            <div class="card-body">
+            <h5 class="card-title">{{data.name | uppercase}}</h5>
+            <h5 class="card-title">PRICE  :{{data.price | currency:'INR'}}</h5>
+            <h5 class="card-title">AGE : {{data.age}}</h5>
+                <!-- 101 to 124  -->
+            <!-- routerLink="/view/{{cat.id}}" -->
+            <div class="space">
+              <button type="button" class="btn btn-warning my-2"  routerLink="/checkout/{{data.id}}" >ADD TO CART</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+  <!-- <button type="button" (click)="minus()"><i class="fa fa-minus"></i></button>
+  <input type="text" [value]="quantity">
+  <button type="button" (click)="plus()"><i class="fa fa-plus"></i></button> -->
+
+
+
+
+
+</body>
+</html>

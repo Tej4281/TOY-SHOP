@@ -1,0 +1,44 @@
+.img:hover{
+  animation:  shake 0.8s  ;
+   }
+
+   @keyframes shake{
+     0%{
+       transform: translateX(0)
+     }
+     25%{
+       transform: translateX(25px);
+     }
+
+     50%{
+       transform: translateX(-25px);
+     }
+     100%{
+       transform: translateX(0px);
+     }
+   }
+.table{
+  color:4px solid black;
+
+}
+.btn{
+  height: 50px;
+  margin-top: 3px;
+  /* margin-top: 25px; */
+}
+.row{
+  border: 2px solid black;
+}
+.col{
+  border: 2px solid black;
+}
+.col-md{
+  margin-top: 20px;
+}
+/* .col-md.img{
+  margin-top: -20px;
+} */
+/* .text{
+  text-align: center;
+  margin-top: 20px;
+} */

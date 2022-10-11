@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #ffffff;
+    align-content: center;
+    min-height: 100vh;
+
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    min-height: 65vh;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: -100px;
+
+
+}
+.image{
+    background: url("/assets/images/black\ and\ red.jpg") center/cover no-repeat;
+    box-shadow: rgba(0, 0, 0, 0.719) 0px 22px 70px 4px;
+}
+.content{
+
+    background-image: linear-gradient(rgb(252, 252, 252), rgba(133, 130, 130, 0.822));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+.content h4{
+    text-transform: uppercase;
+    color: rgb(8, 8, 8);
+    font-size: 25px;
+    font-weight:600 ;
+    opacity: 0.9;
+    text-align:left;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+/* .h4{
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:x-large;
+  color: black;
+} */
+.bold{
+  color: rgb(20, 20, 20);
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 1.5px solid rgb(255, 255, 255);
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #ee1515;
+}
+.links li:hover a{
+    color :#d60606;
+}
+.center{
+  position: relative;
+  color: white;
+}
+
+/*******/
+
+@media(max-width: 992px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+        height: 100vh;
+    }
+    .content{
+        height: 100vh;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+
+}

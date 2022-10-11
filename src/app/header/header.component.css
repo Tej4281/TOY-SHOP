@@ -1,0 +1,26 @@
+.nav-link{
+  font-family: 'Times New Roman', Times, serif;
+  font-size:20px;
+  font-weight: 600;
+}
+
+.mini{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 0.5px solid black;
+}
+.nav-item .nav-link:hover{
+  color: red;
+}
+.dropdown-menu:hover{
+background-color: rgb(202, 202, 202);
+
+}
+.dropdown-item{
+  font-weight:900;
+  font-size: medium;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
